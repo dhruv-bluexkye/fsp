@@ -1,0 +1,111 @@
+/* Apex Hero Section */
+.apex-hero{position:relative;overflow:hidden;height:100vh}
+.apex-hero-bg{position:absolute;inset:0;pointer-events:none}
+.apex-hero-texture{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;mix-blend-mode:lighten}
+.apex-hero-ascii{position:absolute;right:0;bottom:0;width:700px;height:730px;opacity:1}
+.apex-hero-content{position:relative;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:102px 0 84px}
+.apex-hero .container{max-width:none;margin:0;padding-left:64px;padding-right:24px}
+.apex-hero-text{max-width:815px}
+.apex-hero-title{font-weight:500;letter-spacing:-0.0571em;line-height:.83;font-size:70px;color:#FFFFFF;margin-bottom:24px}
+.apex-hero-subtitle{font-weight:400;letter-spacing:-0.0571em;line-height:.83;font-size:70px;color:rgba(255,255,255,0.8);margin-bottom:41px}
+.btn-invest-now{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#0000FF;font-size:20px;font-weight:400;line-height:1.25;letter-spacing:-0.019em;padding:7px 40px;border-radius:20px;text-decoration:none;width:175px;height:40px}
+
+/* Why Sports Section */
+.why-sports{background:#fff;padding:80px 0 100px;position:relative}
+.why-sports-container{max-width:1321px;margin:0 auto;padding:0 40px}
+.apex-disclaimer{font-size:12px;font-weight:400;line-height:1.32;letter-spacing:-.01em;color:#B1B1B1;max-width:1311px;margin:0 auto 48px;text-align:left}
+.why-sports-title{font-size:48px;font-weight:500;line-height:.94;letter-spacing:-.025em;text-align:center;color:#4D4D4D;text-transform:capitalize;margin-bottom:24px}
+.why-sports-desc{font-size:22px;font-weight:400;line-height:1.14;letter-spacing:-.017em;text-align:center;color:#000;max-width:786px;margin:0 auto 24px}
+.why-sports-desc-bold{font-size:20px;font-weight:500;line-height:1.15;letter-spacing:-.02em;text-align:center;color:#000;max-width:786px;margin:0 auto 48px}
+.btn-read-more{display:flex;align-items:center;justify-content:center;background:#0000FF;color:#fff;font-size:22px;font-weight:400;line-height:1.13;letter-spacing:-.017em;padding:8px 40px;border-radius:19px;text-decoration:none;margin:0 auto 24px;width:224px;height:37px}
+.why-sports-grid{display:flex;flex-wrap:wrap;gap:0;margin-bottom:48px}
+.why-sports-card{background:#fff;padding:25px 22px 40px;display:flex;flex-direction:column;gap:8px;min-height:283px;flex:1 1 0;min-width:200px;border:none;border-left:none;border-right:1px solid #E6E6E6;border-top:none;border-bottom:none}
+.why-sports-card:first-child{border-left:1px solid #E6E6E6}
+.why-sports-card:last-child{border-right:none}
+.why-sports-card:nth-child(1),.why-sports-card:nth-child(2),.why-sports-card:nth-child(3){border-top:1px solid #E6E6E6}
+.why-sports-card:nth-child(4),.why-sports-card:nth-child(5),.why-sports-card:nth-child(6){border-top:none !important}
+.why-sports-icon{margin-bottom:32px}
+.why-sports-icon img{display:block;width:35px;height:35px}
+.why-sports-card-title{font-size:16px;font-weight:600;line-height:1.3;letter-spacing:-.02em;color:#4D4D4D;margin-bottom:5px}
+.why-sports-card-desc{font-size:16px;font-weight:300;line-height:1.3;letter-spacing:-.02em;color:#4D4D4D}
+
+/* Participation Section */
+.participation-section{background:#fff;padding:80px 0 100px;position:relative}
+.participation-container{max-width:1310px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:529px 1fr;gap:0;align-items:center}
+.participation-content{max-width:529px}
+.participation-text{font-size:26px;font-weight:500;line-height:1.08;letter-spacing:-.0123em;color:#000;margin:0}
+.participation-chart{max-width:783px;position:relative}
+.chart-title{font-size:24px;font-weight:600;line-height:.96;letter-spacing:-.0133em;color:#4D4D4D;text-align:right;margin-bottom:7px}
+.chart-wrapper{position:relative;display:flex;flex-direction:column;align-items:center;margin-top:7px}
+.pie-chart-image{width:490px;height:490px;display:block}
+.chart-legend{position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none}
+.legend-item{position:absolute;display:flex;flex-direction:column;gap:10px}
+.legend-item.participation{top:5px;left:0;width:291px}
+.legend-item.spectator{bottom:163px;right:54px;width:217px;align-items:flex-end}
+.legend-line{display:block;width:100%;height:34px;border-bottom:2px dashed #000;margin-bottom:10px}
+.legend-item.spectator .legend-line{width:201px;margin-left:auto}
+.legend-text{font-size:16px;font-weight:600;line-height:1.3;letter-spacing:-.02em;color:#4D4D4D;margin:0}
+
+/* FSP Note Section */
+.fsp-note-section{background:#fff;padding:80px 0 100px;position:relative}
+.fsp-note-container{max-width:1311px;margin:0 auto;padding:0 40px}
+.fsp-note-title{font-size:48px;font-weight:500;line-height:.94;letter-spacing:-.025em;color:#4D4D4D;text-transform:capitalize;margin-bottom:60px}
+.fsp-note-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fsp-note-card{background:#D9D9D9;border-radius:18px;height:459px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.fsp-note-card .card-texture-overlay{position:absolute;inset:0;background-image:url('../assets/images/card-texture-e0eadf.png');background-size:cover;background-position:center;opacity:1;mix-blend-mode:soft-light;pointer-events:none;z-index:1}
+.fsp-note-card .card-content{position:relative;z-index:2;padding:24px 30px;display:flex;flex-direction:column;height:100%}
+.fsp-note-card .card-label{font-size:16px;font-weight:500;line-height:1.44;color:#fff;text-transform:uppercase;margin-bottom:10px}
+.fsp-note-card .card-title{font-size:26px;font-weight:500;line-height:1.08;letter-spacing:-.012em;color:#fff;margin-bottom:auto}
+.fsp-note-card .btn-card-label{background:#fff;color:#4D4D4D;font-size:16px;font-weight:500;line-height:1.75;letter-spacing:-.02em;padding:6px 24px;border-radius:30px;text-decoration:none;text-align:center;width:168px;height:36px;display:flex;align-items:center;justify-content:center}
+/* Card gradients */
+.card-fsp-games{background:linear-gradient(180deg, #0000FF 0%, #d2d2d2 100%)}
+.card-worlds-best{background:linear-gradient(180deg, #0000FF 0%, #d2d2d2 100%)}
+.card-fsp-fintech{background:linear-gradient(180deg, #0000FF 0%, #d2d2d2 100%)}
+
+/* FSP Note Features Section */
+.fsp-note-features{background:#fff;padding:80px 0 100px;position:relative}
+.fsp-note-features-container{max-width:1321px;margin:0 auto;padding:0 40px}
+.fsp-note-features-header{margin-bottom:29px}
+.fsp-note-features-title{font-size:48px;font-weight:500;line-height:.94;letter-spacing:-.025em;color:#4D4D4D;text-transform:capitalize;margin-bottom:0}
+.fsp-note-features-subtitle{font-size:48px;font-weight:500;line-height:.94;letter-spacing:-.025em;color:#4D4D4D;text-transform:capitalize;margin-top:0}
+.fsp-note-features-content{margin-bottom:43px}
+.fsp-note-features-text{margin-bottom:113px}
+.fsp-note-features-list{list-style:decimal;padding-left:20px;margin:0}
+.fsp-note-features-list li{font-size:16px;font-weight:400;line-height:1.3;letter-spacing:-.02em;color:#4D4D4D;margin-bottom:12px}
+.fsp-note-features-graph{width:100%}
+.portfolio-graph-image{width:100%;height:auto;display:block;max-width:1314px}
+.graph-disclaimer{font-size:12px;font-weight:400;line-height:1.32;letter-spacing:-.01em;color:#B1B1B1;margin-top:8px}
+.fsp-note-trading{margin-bottom:53px}
+.fsp-note-trading-text{font-size:48px;font-weight:500;line-height:.94;letter-spacing:-.025em;color:#4D4D4D;text-transform:capitalize;margin-bottom:43px;max-width:1272px}
+.fsp-note-trading-graph{width:100%}
+.profit-pool-graph-image{width:100%;height:auto;display:block;max-width:1321px}
+.fsp-note-revenue{margin-bottom:0}
+.fsp-note-revenue-text{font-size:48px;font-weight:300;line-height:.94;letter-spacing:-.025em;color:#4D4D4D;text-transform:capitalize;margin-bottom:18px;max-width:1315px}
+.fsp-note-revenue-bar{width:100%}
+.threshold-bar-image{width:100%;height:auto;display:block;max-width:1317px}
+
+/* FSP Council Section */
+.fsp-council{background:#fff;padding:80px 0 100px;position:relative}
+.fsp-council-container{max-width:1321px;margin:0 auto;padding:0 40px}
+.fsp-council-header{margin-bottom:56px}
+.fsp-council-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-.025em;color:#4D4D4D;margin-bottom:18px}
+.fsp-council-desc{font-size:22px;font-weight:400;line-height:1.136;letter-spacing:-.0172em;color:#000;max-width:786px;margin:0}
+.fsp-council-featured{display:grid;grid-template-columns:repeat(2,1fr);gap:66px;margin-bottom:65px}
+.fsp-council-card-large{background:#fff;border:1px solid #404040;border-radius:20px;height:391px;display:flex;position:relative;overflow:hidden}
+.card-large-image{position:relative;width:287px;height:100%;flex-shrink:0}
+.card-bg-shape{position:absolute;left:1px;top:2px;width:287px;height:388px;border-radius:0 0 0 19px}
+.card-person-image{position:absolute;left:1px;top:-34px;width:306px;height:424px;z-index:2}
+.card-large-content{padding:73px 45px 45px 25px;display:flex;flex-direction:column;flex:1}
+.card-label-council{font-size:12px;font-weight:500;line-height:1;letter-spacing:.16em;text-transform:uppercase;color:#0F0F19;margin-bottom:3px;display:block}
+.card-large-title{font-size:20px;font-weight:500;line-height:1.088;letter-spacing:-.01em;text-transform:uppercase;color:#000;margin-bottom:15px}
+.card-badge{display:inline-block;border:1px solid #4E4E4E;border-radius:7px;padding:6px 7px;font-size:12px;font-weight:500;line-height:1.5;letter-spacing:.1em;text-transform:uppercase;color:#4E4E4E;text-align:center;margin-bottom:17px}
+.card-large-desc{font-size:16px;font-weight:400;line-height:1.1875;letter-spacing:-.02em;color:#4D4D4D;margin:0}
+.fsp-council-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:63px}
+.fsp-council-card{background:#fff;border:1px solid #404040;border-radius:20px;height:580px;display:flex;flex-direction:column;overflow:hidden}
+.card-council-content{padding:38px 34px 0;flex-shrink:0}
+.card-council-name{font-size:20px;font-weight:500;line-height:1.088;letter-spacing:-.01em;text-transform:uppercase;color:#000;margin-bottom:11px}
+.card-council-desc{font-size:16px;font-weight:400;line-height:1.1875;letter-spacing:-.02em;color:#4D4D4D;margin:0 0 78px}
+.card-council-image{position:relative;width:100%;flex:1;overflow:hidden;border-radius:0 0 0 19px}
+.card-council-image::before{content:"";position:absolute;left:1px;bottom:0;width:334px;height:309px;background:#2DA2FF;border-radius:0 20px 0 19px;z-index:1}
+.council-profile-image{width:100%;height:100%;object-fit:cover;object-position:center top;position:relative;z-index:2}
+
