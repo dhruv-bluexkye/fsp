@@ -1,0 +1,9 @@
+:root{
+  --fsp-blue:#0000ff;             /* from figma rectangle fill */
+  --fsp-blue-2:#2c2cff;           /* footer rect tint */
+  --text:#ffffff;
+  --text-dim:rgba(255,255,255,.9);
+  --container:1200px;
+}
+
+
