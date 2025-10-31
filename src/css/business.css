@@ -1,0 +1,143 @@
+/* Business Hero Section */
+.business-hero{position:relative;overflow:hidden;height:100vh}
+.business-hero-bg{position:absolute;inset:0;pointer-events:none}
+.business-hero-texture{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;mix-blend-mode:lighten}
+.business-hero-ascii{position:absolute;right:0;bottom:0;width:700px;height:730px;opacity:1}
+.business-hero-content{position:relative;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:102px 0 84px}
+.business-hero .container{max-width:none;margin:0;padding-left:64px;padding-right:24px}
+.business-hero-text{max-width:815px}
+.business-hero-title{font-weight:500;letter-spacing:-0.0571em;line-height:.83;font-size:70px;color:#FFFFFF;margin-bottom:24px}
+.business-hero-subtitle{font-weight:400;letter-spacing:-0.0571em;line-height:.83;font-size:70px;color:rgba(255,255,255,0.8);margin-bottom:41px}
+.btn-invest-now{display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#0000FF;font-size:20px;font-weight:400;line-height:1.25;letter-spacing:-0.019em;padding:7px 40px;border-radius:20px;text-decoration:none;width:175px;height:40px}
+
+/* Business Revenue Section */
+.business-revenue{background:#fff;padding:80px 0 100px;position:relative}
+.business-revenue-container{max-width:1296px;margin:0 auto;padding:0 40px}
+.business-revenue-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#4D4D4D;text-align:center;text-transform:capitalize;margin-bottom:24px}
+.business-revenue-pill{display:inline-flex;align-items:center;justify-content:center;background:#E6E6E6;color:#4D4D4D;font-size:22px;font-weight:400;line-height:1.1345;letter-spacing:-0.01745em;padding:8px 24px;border-radius:19px;margin:0 auto 60px;width:fit-content;display:block;text-align:center}
+.business-revenue-cards{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.business-revenue-cards::-webkit-scrollbar{display:none}
+.business-revenue-card{background:#fff;border:1px solid #E5E7EB;border-right:none;padding:21px 13px;display:flex;flex-direction:column;min-width:144px;width:144px;height:220px;flex-shrink:0}
+.business-revenue-card:first-child{border-left:1px solid #E5E7EB}
+.business-revenue-card:last-child{border-right:1px solid #E5E7EB}
+.business-revenue-card .card-icon{margin-bottom:32px;width:32px;height:32px}
+.business-revenue-card .card-icon img{display:block;width:100%;height:100%}
+.business-revenue-card .card-text{display:flex;flex-direction:column;gap:10px}
+.business-revenue-card .card-title{font-size:13px;font-weight:400;line-height:1.077;color:#000;margin:0}
+.business-revenue-card .card-desc{font-size:11px;font-weight:400;line-height:1.091;color:#6A6D78;margin:0}
+
+/* Responsive - Mobile */
+@media (max-width: 960px){
+  .business-revenue-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;overflow-x:visible}
+  .business-revenue-card{width:auto;min-width:auto;border-right:none;border-bottom:none}
+  .business-revenue-card:nth-child(3n){border-right:1px solid #E5E7EB}
+  .business-revenue-card:nth-child(1),.business-revenue-card:nth-child(2),.business-revenue-card:nth-child(3){border-top:1px solid #E5E7EB}
+  .business-revenue-card:nth-child(4),.business-revenue-card:nth-child(5),.business-revenue-card:nth-child(6){border-top:none}
+  .business-revenue-card:nth-child(7),.business-revenue-card:nth-child(8),.business-revenue-card:nth-child(9){border-top:none;border-bottom:1px solid #E5E7EB}
+}
+
+@media (max-width: 640px){
+  .business-revenue-cards{grid-template-columns:repeat(2,1fr)}
+  .business-revenue-card:nth-child(3n){border-right:none}
+  .business-revenue-card:nth-child(2n){border-right:1px solid #E5E7EB}
+  .business-revenue-title{font-size:36px}
+  .business-revenue-pill{font-size:18px}
+}
+
+/* Business Challenge Section */
+.business-challenge{background:#fff;padding:80px 0 100px;position:relative}
+.business-challenge-container{max-width:1310px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:654px 656px;gap:0;align-items:flex-start}
+.business-challenge-left{padding-right:40px}
+.business-challenge-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#4D4D4D;margin-bottom:26px;max-width:496px}
+.business-challenge-list{list-style:decimal;padding-left:20px;margin:0 0 71px;max-width:652px}
+.business-challenge-list li{font-size:16px;font-weight:400;line-height:1.3;letter-spacing:-0.02em;color:#4D4D4D;margin-bottom:12px}
+.btn-supercharge{display:inline-flex;align-items:center;justify-content:center;background:#0000FF;color:#fff;font-size:22px;font-weight:400;line-height:1.1345;letter-spacing:-0.01745em;padding:6px 31px;border-radius:19px;text-decoration:none;height:37px;width:296px}
+.business-challenge-right{display:flex;align-items:center;justify-content:center}
+.qr-code-placeholder{width:656px;height:588px;background:#D9D9D9;display:flex;align-items:center;justify-content:center;border-radius:0}
+.qr-code-placeholder span{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#4D4D4D;text-align:center}
+
+/* Responsive - Business Challenge */
+@media (max-width: 960px){
+  .business-challenge-container{grid-template-columns:1fr;gap:40px}
+  .business-challenge-left{padding-right:0}
+  .qr-code-placeholder{width:100%;max-width:656px;height:400px}
+  .btn-supercharge{width:100%;max-width:296px}
+}
+
+@media (max-width: 640px){
+  .business-challenge-title{font-size:36px}
+  .btn-supercharge{font-size:18px}
+  .qr-code-placeholder{height:300px}
+  .qr-code-placeholder span{font-size:36px}
+}
+
+/* Business AI Vision Section */
+.business-ai-vision{position:relative;width:100%;height:759px;background-image:url('../assets/images/ai-vision-live-bg.png');background-size:cover;background-position:center;background-repeat:no-repeat;display:flex;align-items:flex-end;padding:64px}
+.ai-vision-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#fff;margin:0;padding-bottom:50px}
+
+/* Responsive - AI Vision */
+@media (max-width: 960px){
+  .business-ai-vision{height:600px;padding:40px}
+  .ai-vision-title{font-size:40px;padding-bottom:30px}
+}
+
+@media (max-width: 640px){
+  .business-ai-vision{height:400px;padding:24px}
+  .ai-vision-title{font-size:32px;padding-bottom:20px}
+}
+
+/* Business Tools Section */
+.business-tools{background:#fff;padding:80px 0 100px;position:relative}
+.business-tools-container{max-width:1310px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:496px 862px;gap:0;align-items:center}
+.business-tools-left{padding-right:40px}
+.business-tools-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#4D4D4D;margin-bottom:10px}
+.business-tools-subtitle{font-size:22px;font-weight:400;line-height:1.1345;letter-spacing:-0.01745em;color:#4D4D4D;margin-bottom:36px;max-width:457px}
+.btn-developer-docs{display:inline-flex;align-items:center;justify-content:center;background:#0000FF;color:#fff;font-size:16px;font-weight:500;line-height:1.75;letter-spacing:-0.02em;padding:6px 24px;border-radius:30px;text-decoration:none;width:168px;height:36px}
+.business-tools-right{display:flex;align-items:center;justify-content:flex-end}
+.business-tools-image{width:862px;height:567px;display:block;object-fit:cover;border-radius:0}
+
+/* Responsive - Business Tools */
+@media (max-width: 960px){
+  .business-tools-container{grid-template-columns:1fr;gap:40px}
+  .business-tools-left{padding-right:0}
+  .business-tools-image{width:100%;height:auto;max-width:862px}
+}
+
+@media (max-width: 640px){
+  .business-tools-title{font-size:36px}
+  .business-tools-subtitle{font-size:18px}
+  .btn-developer-docs{font-size:14px;width:150px}
+}
+
+/* Tournament Management Section */
+.tournament-management{background:#fff;padding:80px 0 100px;position:relative}
+.tournament-container{max-width:1310px;margin:0 auto;padding:0 40px}
+.tournament-title{font-size:48px;font-weight:500;line-height:.9375;letter-spacing:-0.025em;color:#4D4D4D;text-align:center;margin-bottom:77px}
+.tournament-cards{display:grid;grid-template-columns:484px 1fr;gap:29px;margin-bottom:29px}
+.tournament-card{position:relative;border:1px solid rgba(0,0,0,0.1);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.tournament-card-1{grid-column:1;grid-row:1}
+.tournament-card-2{grid-column:2;grid-row:1}
+.tournament-card-3{grid-column:1 / -1;grid-row:2}
+.tournament-card-content{padding:44px 21px 56px;display:flex;flex-direction:column;height:100%}
+.tournament-card-2 .tournament-card-content{padding:39px 32px 56px}
+.tournament-card-3 .tournament-card-content{padding:54px 32px 56px}
+.tournament-card-title{font-size:20px;font-weight:500;line-height:1.15;color:#000;margin:0 0 20px}
+.tournament-card-desc{font-size:16px;font-weight:400;line-height:1.3;letter-spacing:-0.02em;color:#4D4D4D;margin:0 0 auto}
+.tournament-card-image{width:100%;height:auto;display:block;object-fit:cover;margin-top:auto;border-radius:20px}
+.tournament-card-2 .tournament-card-image{width:110%;height:auto;object-fit:cover;object-position:left top;margin-right:-10%;margin-bottom:-30px;max-height:405px}
+.btn-request-access{display:inline-flex;align-items:center;justify-content:center;background:#0000FF;color:#fff;font-size:20px;font-weight:400;line-height:1.248;letter-spacing:-0.0192em;padding:7px 24px;border-radius:20px;text-decoration:none;width:175px;height:40px;margin-top:20px}
+.btn-deposit-now{display:inline-block;color:#fff;font-size:20px;font-weight:400;line-height:1.248;letter-spacing:-0.0192em;margin-top:20px}
+
+/* Responsive - Tournament Management */
+@media (max-width: 960px){
+  .tournament-cards{grid-template-columns:1fr;gap:20px}
+  .tournament-card-1,.tournament-card-2,.tournament-card-3{grid-column:1;grid-row:auto}
+}
+
+@media (max-width: 640px){
+  .tournament-title{font-size:36px}
+  .tournament-card-title{font-size:18px}
+  .tournament-card-desc{font-size:14px}
+  .btn-request-access{font-size:18px;width:150px}
+}
+
