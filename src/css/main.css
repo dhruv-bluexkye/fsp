@@ -77,8 +77,8 @@ body{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  background:#E6E6E6;
-  color:#4D4D4D;
+  background:#0000FF;
+  color:#ffffff;
   font-size:22px;
   font-weight:400;
   line-height:1.13;
@@ -333,6 +333,52 @@ body{
   letter-spacing:-.01em;
   color:#B1B1B1;
   max-width:437px;
+  margin-bottom:24px;
+}
+.compete-link{
+  color:#0000FF;
+  text-decoration:none;
+}
+.compete-link:hover{
+  text-decoration:underline;
+}
+.compete-powered-by{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:24px;
+}
+.powered-by-label{
+  font-size:16px;
+  font-weight:400;
+  line-height:1.3;
+  letter-spacing:-.02em;
+  color:#000;
+}
+.powered-by-logo-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:#0000FF;
+}
+.powered-by-logo{
+  width:auto;
+  height:24px;
+  display:block;
+}
+.powered-by-text{
+  font-size:16px;
+  font-weight:400;
+  line-height:1.3;
+  letter-spacing:-.02em;
+  color:#0000FF;
+}
+.powered-by-arrow{
+  width:16px;
+  height:16px;
+  color:#0000FF;
+  flex-shrink:0;
 }
 .compete-images{
   position:relative;
@@ -359,6 +405,176 @@ body{
   border-radius:8px;
 }
 .compete-divider{display:none}
+
+/* Redeem Your FSP Champion Points & Win Big Section */
+.redeem-win-big-section{
+  background:#fff;
+  padding:80px 40px 100px;
+  position:relative;
+}
+.redeem-win-big-container{
+  max-width:1310px;
+  margin:0 auto;
+}
+.redeem-win-big-header{
+  text-align:center;
+  margin-bottom:34px;
+}
+.redeem-win-big-title{
+  font-size:48px;
+  font-weight:500;
+  line-height:.9375;
+  letter-spacing:-.025em;
+  color:#4D4D4D;
+  text-transform:capitalize;
+  margin-bottom:12px;
+}
+.redeem-win-big-subtitle{
+  font-size:22px;
+  font-weight:400;
+  line-height:1.136;
+  letter-spacing:-.0145em;
+  color:#4D4D4D;
+  text-align:center;
+}
+.redeem-win-big-grid{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  margin-bottom:0;
+}
+.redeem-grid-row{
+  display:grid;
+  gap:43px;
+  margin-bottom:0;
+}
+.redeem-grid-row:first-child{
+  grid-template-columns:632px 632px;
+  margin-bottom:0;
+}
+.redeem-grid-row:last-child{
+  grid-template-columns:413px 413px 413px;
+  justify-content:center;
+  margin-top:0;
+}
+.redeem-card-item{
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+}
+.redeem-grid-row:first-child .redeem-card-item{
+  width:632px;
+  height:498px;
+}
+.redeem-grid-row:last-child .redeem-card-item{
+  width:413px;
+  height:325px;
+}
+.redeem-card-image{
+  width:100%;
+  flex:1;
+  overflow:hidden;
+  position:relative;
+}
+.redeem-grid-row:first-child .redeem-card-image{
+  height:391px;
+}
+.redeem-grid-row:last-child .redeem-card-image{
+  height:250px;
+}
+.redeem-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.redeem-card-footer{
+  background:#0000FF;
+  padding:12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  min-height:75px;
+}
+.redeem-grid-row:first-child .redeem-card-footer{
+  min-height:107px;
+}
+.redeem-card-text{
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,sans-serif;
+  font-size:24px;
+  font-weight:700;
+  line-height:.9;
+  color:#fff;
+  margin:0;
+  flex:1;
+}
+.redeem-grid-row:last-child .redeem-card-text{
+  font-size:20px;
+}
+.btn-join-now{
+  background:#fff;
+  color:#0000FF;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.56;
+  letter-spacing:-.024em;
+  padding:7px 19px;
+  border-radius:20px;
+  text-decoration:none;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.btn-join-now:hover{
+  opacity:.9;
+}
+.redeem-win-big-bottom{
+  display:grid;
+  grid-template-columns:897px 413px;
+  gap:0;
+  margin-top:3px;
+  border-radius:20px;
+  overflow:hidden;
+}
+.redeem-bottom-image{
+  width:100%;
+  height:224px;
+  overflow:hidden;
+}
+.redeem-bottom-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.redeem-bottom-cta{
+  background:#0000FF;
+  padding:61px 24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  height:224px;
+}
+.redeem-bottom-text{
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,sans-serif;
+  font-size:20px;
+  font-weight:700;
+  line-height:.9;
+  color:#fff;
+  text-align:center;
+  margin:0;
+}
+.redeem-bottom-cta .btn-join-now{
+  width:373px;
+  text-align:center;
+  justify-content:center;
+  padding:7px 0;
+}
 
 /* Make Your Money Go Further Section */
 .money-further{
@@ -1027,6 +1243,13 @@ body{
   position:relative;
   z-index:1;
 }
+.calculator-header-wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:67px;
+  gap:40px;
+}
 .calculator-title{
   font-size:48px;
   font-weight:500;
@@ -1034,13 +1257,15 @@ body{
   letter-spacing:-.025em;
   color:#fff;
   text-transform:capitalize;
-  margin-bottom:0;
+  margin:0;
+  flex-shrink:0;
 }
-.calculator-header{
+.calculator-header-right{
   display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  margin-bottom:67px;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:16px;
+  text-align:right;
 }
 .calculator-desc{
   font-size:22px;
@@ -1048,8 +1273,9 @@ body{
   line-height:1.1345;
   letter-spacing:-.01745em;
   color:#fff;
-  max-width:457px;
+  max-width:688px;
   margin:0;
+  text-align:right;
 }
 .btn-start-earning-white{
   display:inline-flex;
@@ -1065,11 +1291,13 @@ body{
   border-radius:20px;
   text-decoration:none;
   white-space:nowrap;
+  width:180px;
 }
 .calculator-inputs{
   display:grid;
-  grid-template-columns:235px 235px 382px 403px;
+  grid-template-columns:235px 235px 251px 322px 235px;
   gap:17px;
+  margin-bottom:24px;
 }
 .calculator-card{
   background:#fff;
@@ -1087,7 +1315,7 @@ body{
   line-height:1.088;
   letter-spacing:-.01em;
   color:#757575;
-  margin-bottom:auto;
+  margin-bottom:0;
   display:block;
 }
 .input-label-dark{
@@ -1095,8 +1323,7 @@ body{
 }
 .calculator-input{
   border:none;
-  border-top:1px solid #E6E6E6;
-  padding-top:13px;
+  padding-top:0;
   font-size:48px;
   font-weight:400;
   line-height:1;
@@ -1104,6 +1331,7 @@ body{
   background:transparent;
   outline:none;
   width:100%;
+  margin-top:auto;
 }
 .calculator-card-spending{
   padding:20px 21px;
@@ -1133,8 +1361,7 @@ body{
   font-weight:400;
   line-height:1;
   color:#000;
-  border-top:1px solid #E6E6E6;
-  padding-top:13px;
+  padding-top:0;
   margin-top:auto;
 }
 .chart-icon{
@@ -1143,6 +1370,49 @@ body{
   right:22px;
   width:40px;
   height:40px;
+}
+.calculator-divider{
+  width:100%;
+  height:1px;
+  background:#E6E6E6;
+  margin:0 0 13px 0;
+}
+.calculator-card-golden{
+  background:linear-gradient(135deg, rgba(252, 207, 76, 1) 0%, rgba(251, 233, 152, 1) 23%, rgba(243, 225, 143, 1) 51%, rgba(227, 188, 97, 1) 77%);
+  position:relative;
+}
+.golden-ticket-value{
+  font-size:48px;
+  font-weight:500;
+  line-height:.9375;
+  letter-spacing:-.025em;
+  color:#000;
+  text-transform:uppercase;
+  margin-top:auto;
+  padding-top:13px;
+}
+.ticket-icon{
+  position:absolute;
+  top:12px;
+  right:12px;
+  width:36px;
+  height:36px;
+}
+.fsp-logo-icon{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  width:31px;
+  height:31px;
+}
+.calculator-disclaimer{
+  font-size:12px;
+  font-weight:400;
+  line-height:1.32;
+  letter-spacing:-.01em;
+  color:#fff;
+  margin:0;
+  opacity:.7;
 }
 
 /* FAQ Section */
@@ -1330,6 +1600,13 @@ body{
   .compete-images{height:400px}
   .compete-phone-large{width:240px;height:473px}
   .compete-phone-small{width:170px;height:253px;right:240px}
+  .redeem-win-big-section{padding:60px 24px 80px}
+  .redeem-grid-row:first-child{grid-template-columns:1fr;gap:24px}
+  .redeem-grid-row:last-child{grid-template-columns:1fr;gap:24px}
+  .redeem-grid-row:first-child .redeem-card-item{width:100%;max-width:632px;margin:0 auto}
+  .redeem-grid-row:last-child .redeem-card-item{width:100%;max-width:413px;margin:0 auto}
+  .redeem-win-big-bottom{grid-template-columns:1fr}
+  .redeem-bottom-cta .btn-join-now{width:100%;max-width:373px}
   .money-cards{grid-template-columns:1fr;gap:24px}
   .money-further{padding:0 24px 80px}
   .spend-container{grid-template-columns:1fr;gap:60px}
@@ -1377,6 +1654,12 @@ body{
   .compete-subtitle{font-size:18px}
   .compete-section{padding:60px 24px}
   .compete-content{padding-right:0}
+  .redeem-win-big-title{font-size:36px}
+  .redeem-win-big-subtitle{font-size:18px}
+  .redeem-win-big-section{padding:40px 16px 60px}
+  .redeem-card-text{font-size:20px}
+  .redeem-grid-row:last-child .redeem-card-text{font-size:18px}
+  .redeem-bottom-text{font-size:18px}
   .money-further-title{font-size:36px}
   .rate-large{font-size:120px}
   .spend-title,.spend-subtitle-text{font-size:36px}
